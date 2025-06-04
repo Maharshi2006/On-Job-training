@@ -1,0 +1,306 @@
+<html>
+
+<head>
+	<title> CSS 3</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+	<style>
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			align-items: baseline;
+		}
+
+		#logo {
+			font-weigth: bold;
+			font-size: 25px;
+			margin-right: auto;
+		}
+
+		li {
+			padding: 20px;
+		}
+
+		button {
+			padding: 15px;
+			background-color: lightblue;
+			border: none;
+			border-radius: 15px;
+		}
+
+		#btn1 {
+			margin-left: 50;
+
+		}
+
+		li:hover {
+			color: orange;
+		}
+
+		li button:hover {
+			background-color: #268518;
+		}
+
+		.special_menu {
+			text-align: center;
+		}
+
+		.Menu {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			margin: 0px 60px;
+			gap: 20px;
+		}
+
+		.menu div {
+			margin: 20px;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		.Menu h4 {
+			display: inline;
+		}
+
+		#info button {
+			display: inline-block;
+			border: none;
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			padding: 10px;
+			padding: 15px;
+			background-color: rgb(255, 255, 255);
+			border: 2px solid #06e299;
+			border-radius: 15px;
+		}
+
+		.menu div h6 {
+			display: inline;
+		}
+
+		#info h4 {
+			margin-right: 60%;
+		}
+
+		.checked {
+			color: orange;
+		}
+
+		.rate {
+			display: inline;
+			margin-left: 10px;
+			font-size: 20px;
+		}
+
+		#location button {
+			padding: 15px;
+			background-color: lightblue;
+			border: none;
+			border-radius: 15px;
+		}
+
+		#footer-container {
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		.fa-brands {
+			margin-right: 20px;
+		}
+
+		#footer {
+			color: white;
+			background-color: rgba(0, 0, 0, 0.582);
+		}
+
+		img:hover {
+			opacity: 0.8;
+			transition: 0.3s;
+		}
+
+		.BgImage {
+			background-image: url('/day2/css/back.jpeg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			height: 500px;
+		}
+
+		.boxone{
+			margin: 5%;
+			gap: 20px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+		.boxtwo{
+			/* opacity: 0.8; */
+			margin: 3%;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 15px;
+			
+		}
+		
+	</style>
+</head>
+
+<body>
+
+	<nav>
+		<ul>
+			<li id="logo">Crispy Kitchen</li>
+			<li>Home</li>
+			<li>Story</li>
+			<li>Menu</li>
+			<li>our update</li>
+			<li>Content</li>
+			<li id="btn1"><button>Reservation</button></li>
+		</ul>
+	</nav>
+	<hr>
+
+	<h2 class="Special_menu">Special Menu</h2>
+	<div class="Menu">
+		<div>
+			<img src="dish1.jpg">
+			<div id="info">
+				<h4>Morning Fresh</h4>
+				<button>$12.50</button>
+			</div>
+			<h4 class="rate">5/5</h4>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<h4>102 review</h4>
+		</div>
+		<div>
+			<img src="dish2.jpg">
+			<div id="info">
+				<h4>Tooplate Soup</h4>
+				<button>$24.50</button>
+			</div>
+			<h4 class="rate">4/5</h4>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star "></span>
+			<h4>102 review</h4>
+		</div>
+		<div>
+			<img src="dish3.jpg">
+			<div id="info">
+				<h4>Premium Steak</h4>
+				<button>$45</button>
+				<h6><strike>150</strike></h6>
+			</div>
+			<h4 class="rate">3/5</h4>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star "></span>
+			<span class="fa fa-star "></span>
+			<h4>102 review</h4>
+		</div>
+		<div>
+			<img src="dish4.jpg">
+			<div id="info">
+				<h4>Seafood Set</h4>
+				<button>$86</button>
+				<h6><strike>124</strike></h6>
+			</div>
+			<h4 class="rate">4/5</h4>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star "></span>
+			<h4>102 review</h4>
+		</div>
+		<div>
+			<img src="dish5.jpg">
+			<div id="info">
+				<h4>Burger Set</h4>
+				<button>$20.50</button>
+			</div>
+			<h4 class="rate">2/5</h4>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star "></span>
+			<span class="fa fa-star "></span>
+			<span class="fa fa-star "></span>
+			<h4>102 review</h4>
+		</div>
+		<div>
+			<img src="dish6.jpg">
+			<div id="info">
+				<h4>Healthy Soup</h4>
+				<button>$34.20</button>
+			</div>
+			<h4 class="rate">5/5</h4>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<h4>102 review</h4>
+		</div>
+	</div>
+	<div class="BgImage">
+	
+	</div>	
+	<div class="News & Events">
+		<div class=inmagedescribtion>
+			<center><h2>News & Events</h2></center>
+			<div class="boxone">
+				<div class="box1">
+					<img src="news1.jpeg" alt="News Image 1">
+				</div>
+				<div class="box2">
+					<img src="news2.jpeg" alt="News Image 2">
+			</div>
+		</div>
+		<div class="boxtwo">
+				<div class="box3">
+					<img src="news3.jpeg" alt="News Image 3">
+				</div>
+				<div class="box4">
+					<img src="news4.jpeg" alt="News Image 4">
+			</div>
+			<div class="box5">
+					<img src="news5.jpeg" alt="News Image 5">
+			</div>
+		</div>
+	</div>	
+	<div id="footer">
+		<h2>Crispy Kitchen</h2>
+		<div id="footer-container">
+			<div id="location">
+				<h3>Location</h3>
+				<h4>121 Einstein Loop N, Bronx, NY 10475, United States</h4>
+				<button>Directions</button>
+			</div>
+			<div>
+				<h3>Opening Hours</h3>
+				<h4>Monday - Friday</h4>
+				<h4>10:00 AM - 08:00 PM</h4>
+				<h4>Tel: 123456789</h4>
+			</div>
+			<div>
+				<h3>Social</h3>
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-x-twitter"></i>
+				<i class="fa-brands fa-youtube"></i>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
