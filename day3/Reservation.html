@@ -1,0 +1,235 @@
+<html>
+
+<head>
+	<title> Story</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+	<style>
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			align-items: baseline;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+		a:hover{
+			color: orange;
+		}
+		#logo {
+			font-weigth: bold;
+			font-size: 25px;
+			margin-right: auto;
+		}
+
+		li {
+			padding: 20px;
+		}
+
+		button {
+			padding: 15px;
+			background-color: lightblue;
+			border: none;
+			border-radius: 15px;
+		}
+
+		#btn1 {
+			margin-left: 50;
+
+		}
+
+		li:hover {
+			color: orange;
+		}
+
+		li button:hover {
+			background-color: #268518;
+		}
+
+		.special_menu {
+			text-align: center;
+		}
+
+		.Menu {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			margin: 0px 60px;
+			gap: 20px;
+		}
+
+		.menu div {
+			margin: 20px;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		.Menu h4 {
+			display: inline;
+		}
+
+		#info button {
+			display: inline-block;
+			border: none;
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			padding: 10px;
+			padding: 15px;
+			background-color: rgb(255, 255, 255);
+			border: 2px solid #06e299;
+			border-radius: 15px;
+		}
+
+		.menu div h6 {
+			display: inline;
+		}
+
+		#info h4 {
+			margin-right: 60%;
+		}
+
+		.checked {
+			color: orange;
+		}
+
+		.rate {
+			display: inline;
+			margin-left: 10px;
+			font-size: 20px;
+		}
+
+		#location button {
+			padding: 15px;
+			background-color: lightblue;
+			border: none;
+			border-radius: 15px;
+		}
+
+		#footer-container {
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		.fa-brands {
+			margin-right: 20px;
+		}
+		#footer h2 {
+			margin-left: 20px;
+			padding: 50px;
+		}
+		#footer {
+			color: rgb(0, 0, 0);
+		}
+
+		img:hover {
+			opacity: 0.9;
+			transition: 0.5s;
+		}
+
+		
+
+		
+	
+
+		#footerimg {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			z-index: -1;
+			position: absolute;
+			height: 70%;
+			opacity: 0.8;
+		}
+		#reservation1{
+			position: absolute;
+			top: 78%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			align-items: center;
+			width: 400px;
+			
+		}
+		label{
+			align-items: left;
+		}
+		input{
+			width: 100%;
+			padding: 10px;
+			margin: 5px 0;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav>
+		<ul class="navmenu">
+			<li id="logo">Crispy Kitchen</li>
+			<li><a href="../day2/Normal_website_building_from_Scratch.html">Home</a></li>
+			<li><a href="story.html">Story</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="Our_Update.html">Our updates</a></li>
+			<li><a href="Content.html">Contact</a></li>
+			<li id="btn"><a href="Reservation.html"><Button>Reservation</Button></a></li>
+			
+		</ul>
+	</nav>
+	<hr>
+	<div >
+		<img src="/day3/images/reservationimg.jpg" alt="footerimg" id="reservation Image">
+		<div id="reservation1">
+
+			<h4>Reservation</h4>
+			<label>Name:-</label>
+			<br>
+			<input type="text" id="name" required><br>
+			<label>Email</label><br>
+			<input type="text" id="Email" required><br>
+			<label>password</label><br>
+			<input type="password" id="password" required><br>
+			<label>No of persons</label><br>
+			<input type="text" id="person" required><br>
+			<label>Date</label><br>
+			<input type="date" id="date" required><br>
+			<input type="submit"><br>
+
+		</div>
+	
+	</div>
+	<div id="footer">
+		<img src="/day3/images/footerimg.jpg" alt="footerimg" id="footerimg">
+		<h2>Crispy Kitchen</h2>
+		<div id="footer-container">
+			<div id="location">
+				<h3>Location</h3>
+				<h4>121 Einstein Loop N, Bronx, NY 10475, United States</h4>
+				<button>Directions</button>
+			</div>
+			<div>
+				<h3>Opening Hours</h3>
+				<h4>Monday - Friday</h4>
+				<h4>10:00 AM - 08:00 PM</h4>
+				<h4>Tel: 123456789</h4>
+			</div>
+			<div>
+				<h3>Social</h3>
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-x-twitter"></i>
+				<i class="fa-brands fa-youtube"></i>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

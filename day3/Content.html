@@ -1,0 +1,227 @@
+<html>
+
+<head>
+	<title> Content</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+	<style>
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			align-items: baseline;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+		a:hover{
+			color: orange;
+		}
+		#logo {
+			font-weigth: bold;
+			font-size: 25px;
+			margin-right: auto;
+		}
+
+		li {
+			padding: 20px;
+		}
+
+		button {
+			padding: 15px;
+			background-color: lightblue;
+			border: none;
+			border-radius: 15px;
+		}
+
+		#btn1 {
+			margin-left: 50;
+
+		}
+
+		li:hover {
+			color: orange;
+		}
+
+		li button:hover {
+			background-color: #268518;
+		}
+
+
+
+		#location button {
+			padding: 15px;
+			background-color: lightblue;
+			border: none;
+			border-radius: 15px;
+		}
+
+		#footer-container {
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		.fa-brands {
+			margin-right: 20px;
+		}
+		#footer h2 {
+			margin-left: 20px;
+			padding: 50px;
+		}
+		#footer {
+			color: white;
+			background-color: rgba(0, 0, 0, 0.582);
+		}
+
+		img:hover {
+			opacity: 0.8;
+			transition: 0.3s;
+		}
+
+		#image-contactus1 {
+			width: 100%;
+			height: 400px;
+			overflow: hidden;
+		}
+
+		#image-contactus1 img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			opacity: 0.9;
+			/* box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5); */
+			border-radius: 8px;
+			box-shadow: #000000;
+			box-sizing: 100px 100px 100px 100px;
+			
+		}
+
+		#location1 {
+			text-align: center;
+			margin-top: 20px;
+			color: brown;
+		}
+		#leavemessage {
+			margin: 20px;
+			padding: 20px;
+			background-color: rgba(255, 255, 255, 0.8);
+			border-radius: 10px;
+		}
+		#weekdays, #weekends {
+			margin: 20px;
+			padding: 20px;
+			background-color: rgba(255, 255, 255, 0.8);
+			border-radius: 10px;
+		}
+
+		#contactus1-text {
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav>
+		<ul class="navmenu">
+			<li id="logo">Crispy Kitchen</li>
+			<li><a href="../day2/Normal_website_building_from_Scratch.html">Home</a></li>
+			<li><a href="story.html">Story</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="Our_Update.html">Our updates</a></li>
+			<li><a href="Content.html">Contact</a></li>
+			<li id="btn"><a href="Reservation.html"><Button>Reservation</Button></a></li>
+			
+		</ul>
+	</nav>
+	<hr>
+
+	<div>
+		<div id="hero">
+
+			<div id="image-contactus1">
+				<img src="/day3/images/contact1.jpg" alt="image-contactus1">
+			</div>
+		</div>
+		<div id="contactus1-text">
+			<h1>Say Hi</h1>
+			<h4>We are happy to get in touch with you</h4>
+		</div>
+	</div>
+<div id="allthings">
+	<div id="leavemessage">
+		<h1>Leave a message</h1>
+		<div style="display: flex; justify-content: center; margin-top: 20px; gap: 20px;">
+			<form action="" method="post" style="width: 400px;" gap: 20px;>
+				<label for="name">FullName:</label><br>
+				<input type="text" id="fullname" name="fullname" required style="margin-right: 1%; ">
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" name="phone" required><br>
+				<label for="email" ">Email:</label><br>
+				<input type="email" id="email" name="email" required style="width: 400px;"><br>
+				<label for="message">Message:</label><br>
+				<textarea id="message" name="message" rows="4" required style="width: 400px;"></textarea><br><br>
+				<button type="submit" style="width: 400px;background-color: #000000;color: aliceblue;">Send</button><br>
+			</form>
+		</div>
+	</div>
+
+	<div id="timeforresto">
+		<div id="Weekdays">
+			<h2>Weekdays</h2>
+			<p>Monday to Friday 10:00 AM - 80:00 PM</p>
+		</div>
+		<div id="weekends">
+			<h2>Weekends</h2>
+			<p>Saturday to Sunday 10:00 AM - 11:00 PM</p>
+		</div>
+		<div id="location1">
+			<h2>121 Einstein Loop N, Bronx, NY 10475, United States</h2>
+			<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.848353427382!2d-73.82513668459396!3d40.86482417931664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c28cbc17f4a0c3%3A0x9ae0f1e804a817d!2s121%20Einstein%20Loop%20N%2C%20Bronx%2C%20NY%2010475%2C%20USA!5e0!3m2!1sen!2sus!4v1717589889123!5m2!1sen!2sus"
+  width="80%"
+  height="300"
+  style="border:0; align-items: center;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+  
+</iframe>
+
+
+		</div>
+		</div>
+		<div id="footer">
+			<h2>Crispy Kitchen</h2>
+			<div id="footer-container">
+				<div id="location">
+					<h3>Location</h3>
+					<h4>121 Einstein Loop N, Bronx, NY 10475, United States</h4>
+					<button>Directions</button>
+				</div>
+				<div>
+					<h3>Opening Hours</h3>
+					<h4>Monday - Friday</h4>
+					<h4>10:00 AM - 08:00 PM</h4>
+					<h4>Tel: 123456789</h4>
+				</div>
+				<div>
+					<h3>Social</h3>
+					<i class="fa-brands fa-facebook"></i>
+					<i class="fa-brands fa-instagram"></i>
+					<i class="fa-brands fa-x-twitter"></i>
+					<i class="fa-brands fa-youtube"></i>
+				</div>
+			</div>
+		</div>
+</body>
+
+</html>

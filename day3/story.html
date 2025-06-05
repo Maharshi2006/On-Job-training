@@ -1,0 +1,407 @@
+<html>
+
+<head>
+    <title> Story</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+        }
+        a{
+			text-decoration: none;
+			color: black;
+		}
+		a:hover{
+			color: orange;
+		}
+        #logo {
+            font-weigth: bold;
+            font-size: 25px;
+            margin-right: auto;
+        }
+
+        li {
+            padding: 20px;
+        }
+
+        button {
+            padding: 15px;
+            background-color: lightblue;
+            border: none;
+            border-radius: 15px;
+        }
+
+        #btn1 {
+            margin-left: 50;
+
+        }
+
+        li:hover {
+            color: orange;
+        }
+
+        li button:hover {
+            background-color: #268518;
+        }
+
+        .special_menu {
+            text-align: center;
+        }
+
+        .Menu {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 0px 60px;
+            gap: 20px;
+        }
+
+        .menu div {
+            margin: 20px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .Menu h4 {
+            display: inline;
+        }
+
+        #info button {
+            display: inline-block;
+            border: none;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 10px;
+            padding: 15px;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid #06e299;
+            border-radius: 15px;
+        }
+
+        .menu div h6 {
+            display: inline;
+        }
+
+        #info h4 {
+            margin-right: 60%;
+        }
+
+        .checked {
+            color: orange;
+        }
+
+        .rate {
+            display: inline;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        #location button {
+            padding: 15px;
+            background-color: lightblue;
+            border: none;
+            border-radius: 15px;
+        }
+
+        #footer-container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .fa-brands {
+            margin-right: 20px;
+        }
+        #footer h2 {
+			margin-left: 20px;
+			padding: 50px;
+		}
+        #footer {
+            color: white;
+        }
+
+        img:hover {
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+
+        .BgImage {
+            background-image: url('/day2/css/back.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 500px;
+        }
+
+        .img3_1 {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        #text-image h1 {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(255, 255, 255);
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        #text-image h4 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(255, 255, 255);
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        #text-image {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        #btn2,
+        #btn3 {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #000000;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        #article {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            padding: 50px;
+        }
+
+        #article p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        #ar1,
+        #ar2 {
+            width: 50%;
+            padding: 20px;
+
+        }
+
+        #ar1 h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        #btn3 {
+            background-color: #f44336;
+        }
+
+        #cntcolor {
+            color: orange;
+            cursor: pointer;
+        }
+
+        #team {
+            text-align: center;
+            padding: 50px;
+        }
+
+        #team h1 {
+            margin-bottom: 40px;
+        }
+
+        #team-img {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        #team-img div {
+            text-align: center;
+        }
+
+        #team-img img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        #team-img h2 {
+            margin: 10px 0;
+        }
+
+        #news-letter {
+            
+            padding: 50px;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #news-letter h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        #news-letter p {
+            margin-bottom: 20px;
+            font-size: 0.8rem;
+        }
+
+        #news-letter input {
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+
+        }
+
+        #news-letter button {
+            padding: 10px 20px;
+            background-color: #0a1a14ab;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        #news-letter button:hover {
+            background-color: #0f05055e;
+        }
+
+        #our_news_letter {
+            width: 60%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        #footerimg{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            z-index: -1;
+            position: absolute;
+            height: 70%;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+		<ul class="navmenu">
+			<li id="logo">Crispy Kitchen</li>
+			<li><a href="../day2/Normal_website_building_from_Scratch.html">Home</a></li>
+			<li><a href="story.html">Story</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="Our_Update.html">Our updates</a></li>
+			<li><a href="Content.html">Contact</a></li>
+			<li id="btn"><a href="Reservation.html"><Button>Reservation</Button></a></li>
+			
+		</ul>
+	</nav>
+	<hr>
+    <div id="text-image">
+        <img src="/day3/images/Story1.jpg" alt="img1" class="img3_1">
+        <h1>kitchen Story</h1>
+        <h4>his is how our kitchen evolved in new digital era</h4>
+    </div>
+    <div id="article">
+        <div id="ar1">
+            <h2>Crispy Kitchen is the latest Bootstrap 5 HTML template provided by Tooplate website.</h2>
+            <button id="btn2">Check out News</button>
+            <button id="btn3">Say Hi</button>
+        </div>
+        <div id="ar2">
+            <p>Since this website template is 100% free to use, you can edit and apply it for your commercial restaurant
+                websites. There are 6 HTML pages included in this template. Please <b>click "Reservation" button</b> on
+                the top right to see the pop-up reservation form.</p>
+            <p>You are NOT allowed to redistribute the template ZIP file on any template donwnload website. Please <span
+                    id="cntcolor"> contact us</span> for more information.</p>
+        </div>
+    </div>
+    <div id="team">
+        <h1>Team Members</h1>
+        <div id="team-img">
+            <div id="Member1">
+                <img src="/day3/images/member1.jpg" alt="Member 1">
+                <h2>Sophia</h2>
+                <p>CEO & Founder</p>
+            </div>
+            <div id="Member2">
+                <img src="/day3/images/member2.jpg" alt="Member 2">
+                <h2>Benjamin W.</h2>
+                <p>Restaurant Manager</p>
+            </div>
+            <div id="Member3">
+                <img src="/day3/images/member3.jpg" alt="Member 3">
+                <h2>Muchen Jack</h2>
+                <p>Senior Chef</p>
+            </div>
+        </div>
+    </div>
+    <div id="news-letter">
+        <div id="newsimg2">
+            <img src="/day3/images/our_news_letter.jpg" alt="News Image" id="our_news_letter">
+
+        </div>
+        <div>
+            <h2>Our Newsletter</h2>
+            <p>The food news every day</p>
+            <div>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <button>Subscribe</button>
+            </div>
+            <p>By signing up, you agree to our Privacy Notice and the data policy</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <img src="/day3/images/footerimg.jpg" alt="footerimg" id="footerimg">
+        <h2>Crispy Kitchen</h2>
+        <div id="footer-container">
+            <div id="location">
+                <h3>Location</h3>
+                <h4>121 Einstein Loop N, Bronx, NY 10475, United States</h4>
+                <button>Directions</button>
+            </div>
+            <div>
+                <h3>Opening Hours</h3>
+                <h4>Monday - Friday</h4>
+                <h4>10:00 AM - 08:00 PM</h4>
+                <h4>Tel: 123456789</h4>
+            </div>
+            <div>
+                <h3>Social</h3>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
