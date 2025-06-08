@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es-US">
+<head>
+<title>Ch-38 Text Editting App Development Practice</title>
+<meta charset="utf-8">
+<style>
+    @charset "utf-8";
+
+body{
+	padding:0;
+	margin:0;
+	background-color : #f5f5f5;
+}
+
+header{
+	width:100%;
+	height:140px;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color: #087CFF;
+}
+
+#page{
+	width :70%;
+	height:1200px;
+	background-color:white;
+	margin: 148px auto;
+	border : 1px solid #ccc;
+	font-size:20px;
+	padding:8px;
+	box-sizing:border-box;
+}
+
+#page:focus{
+	outline:none;
+}
+</style>
+</head>
+<body>
+
+<header>
+	<h1 align="center" style="color:white;font-family:century gothic;padding:0;margin:0">WAP TEXT EDITOR 1.0</h1>
+	
+	<button id="bold" title="BOLD (ctrl+b)"><b>B</b></button>
+	<button id="italic" title="ITALIC (ctrl+i)"><i>I</i></button>
+	<button id="underline" title="UNDERLINE (ctrl+u)"><u>U</u></button>
+	<button id="sup">A<sup>2</sup></button>
+	<button id="sub">A<sub>2</sub></button>
+	<button id="left" style="text-align:left">LEFT</button>
+	<button id="center" style="text-align:center">CENTER</button>
+	<button id="right" style="text-align:right">RIGHT</button>
+	<button id="delete"><delete>DELETE</delete:</button>
+	<button id="undo">UNDO</button>
+	<button id="redo">REDO</button>
+</header>
+<div id="page" contenteditable="true" spellcheck="false"></div>
+
+<script >
+    //bold formate
+var bold = document.getElementById("bold");
+bold.onclick = function()
+{
+	document.execCommand("bold");
+}
+
+
+//italic formate
+var italic = document.getElementById("italic");
+italic.onclick = function ()
+{
+	document.execCommand("italic");
+}
+
+//underline fomate
+var underline = document.getElementById("underline");
+underline.onclick = function()
+{
+	document.execCommand("underline");
+}
+
+//superscript fomate
+var sup = document.getElementById("sup");
+sup.onclick = function()
+{
+	document.execCommand("superscript");
+}
+
+//subscript fomate
+var sub = document.getElementById("sub");
+sub.onclick = function()
+{
+	document.execCommand("subscript");
+}
+
+//"justifyLeft fomate
+var left = document.getElementById("left");
+left.onclick = function()
+{
+	document.execCommand("justifyLeft");
+}
+
+//justifyCenter fomate
+var center = document.getElementById("center");
+center.onclick = function()
+{
+	document.execCommand("justifyCenter");
+}
+
+//justifyRight fomate
+var right = document.getElementById("right");
+right.onclick = function()
+{
+	document.execCommand("justifyRight");
+}
+
+
+//delete fomate
+var del = document.getElementById("delete");
+del.onclick = function()
+{
+	document.execCommand("delete");
+}
+
+
+//Undo fomate
+var undo = document.getElementById("undo");
+undo.onclick = function()
+{
+	document.execCommand("undo");
+}
+
+//redo fomate
+var redo = document.getElementById("redo");
+redo.onclick = function()
+{
+	document.execCommand("redo");
+}
+</script>
+</body>
+</html>

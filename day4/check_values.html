@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="number">Number</label>
+    <input type="number" id="number" placeholder="Enter a number"><br><br>
+    <label for="reCheck">Recheck Number</label>
+    <input type="number" id="reCheck" placeholder="Recheck the number"><br><br>
+    <input type="submit" value="lOGIN" onclick="checkValues()">
+    <div id="output"></div>
+    <script>
+        function checkValues() {
+            var number = document.getElementById("number").value;
+            var reCheck = document.getElementById("reCheck").value;
+            var output = number === reCheck ? "Values are same" : "Values are not same";
+            document.getElementById("output").innerText = output;
+            return false;
+        }
+    </script>
+</body>
+
+</html>

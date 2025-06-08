@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Join Your Name</h1>
+    <hr>
+    <label for="name">Enter your name:</label><br>
+    <input type="text" id="name" placeholder="Enter your name here"><br>
+    <label for="surname">Enter your surname:</label><br>
+    <input type="text" id="surname" placeholder="Enter your surname here"><br>
+    <button id="submit" onclick="joinNames()">Join Names</button>
+    <script>
+        function joinNames() {
+            var name = document.getElementById("name").value;
+            var surname = document.getElementById("surname").value;
+            var fullName = name + " " + surname;
+            document.write("<h2>Your Full Name is: " + fullName + "</h2>");
+        }
+    </script>
+</body>
+
+</html>

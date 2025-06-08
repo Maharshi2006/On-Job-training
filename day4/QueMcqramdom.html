@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #7207ffd7;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+
+    }
+    h2 {
+        color: #000000;
+    }
+    button {
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #4CAF50;
+        border-radius: 15px;
+    }
+    button:hover {
+        background-color: #04f510;
+    }
+</style>
+<body>
+    <h2>What is full form of "RAM"</h2>
+    <button id="click1" onclick="click1()">Ramdom Access memory</button>
+    <button id="click2" onclick="click2()">Ramdom Activa memory</button>
+    <p id="result"> </p>
+    <h2>What is use of JavaScript</h2>
+    
+    <input type="radio" name="click3" value="To define the structure of web pages." checked>
+    <input type="radio" name="click3" value="To style the appearance of web pages.">
+    <input type="radio" name="click3" value="To add interactivity and dynamic content to web pages.">
+    <input type="radio" name="click3" value="To define the underlying logic of web pages.">
+    
+<script>
+    function click1() {
+        // document.write("Ramdom Access memory Is correct answer");
+        document.getElementById("result").innerHTML = "Ramdom Access memory Is correct answer";
+        document.getElementById("result").style.color = "#00ff0d";    
+    }
+    function click2() {
+        document.getElementById("result").innerHTML ="Ramdom Activa memory Is wrong answer";
+        document.getElementById("result").style.color = "red";
+    }
+    
+    </script>
+</body>
+</html>

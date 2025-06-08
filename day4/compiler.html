@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es-US">
+<head>
+<title> Ch-25 Text Editer</title>
+<meta charset="utf-8">
+<style>
+body{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	font-family:sans-serif;
+}
+
+#head{
+	background-color:#FF4E00;
+	text-align:center;
+	padding:2px;
+	color:white;
+}
+
+#lbox,#rbox{
+	margin:0 auto;
+	width:40%;
+	padding:50px;
+	float:left;
+}
+
+fieldset{
+	height:500px;
+}
+
+textarea{
+	border:none;
+}
+
+textarea:focus{
+	outline:none;			
+}
+
+button{
+	background-color:#FF4E00;
+	float:right;
+	box-shadow:0px 0px 10px #ccc;
+	border:none;
+	margin-top:10px;
+	padding:10px 8px;
+	color:white;
+	border-radius:5px;
+	cursor:pointer;
+}
+</style>
+</head>
+<body>
+<div id="head"><h1>WAP TEXT EDITOR VER - 1.0</h1></div>
+<div id="lbox">
+	<fieldset>
+		<legend><b>Type code here</b></legend>
+		<textarea col="10" rows="30" id="demo">
+            
+			
+			<html>
+				<head>
+					
+				</head>
+				<body>
+		
+				</body>
+			</html>
+        
+		</textarea>
+	</fieldset>
+	<button onclick="demo()">Run code now!</button>
+</div>
+<div id="rbox">
+	<fieldset>
+		<legend><b>Code result</b></legend>
+		<div id="result"></div>
+	</fieldset>
+</div>
+<script>
+function demo()
+{
+	var x = document.getElementById("demo").value;
+	var y = document.getElementById("result");
+	result.innerHTML = x;
+}
+</script>
+</body>
+</html>
