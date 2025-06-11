@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #slider {
+            height: 100vh;
+            animation: slider 10s infinite;
+        }
+
+        @keyframes slider {
+            0% {background: url('1.png') no-repeat;
+            background-size: 100%;}
+            20% {background: url('2.png') no-repeat;
+            background-size: 100%;}
+            40% {background: url('3.png') no-repeat;
+            background-size: 100%;}
+            60% {background: url('4.png') no-repeat;
+            background-size: 100%;}
+            80% {background: url('5.png') no-repeat;
+            background-size: 100%;}
+            100% {background: url('6.png') no-repeat;
+            background-size: 100%;}
+        }
+    </style>
+<body class="bg-gray-100">
+    <header class="bg-[#812626] justify-between items-center flex px-1 py-1">
+        <div class=" px-1 py-1">
+            <h6 class="text-white text-xs font-bold ">Admission Helpline: +91-79-35201300 / +91-79-66046300
+                <i class="fa-brands fa-whatsapp text-white text-lg hover:text-green-600"></i>
+                +91-90990 63464
+            </h6>
+
+        </div>
+        <div class="flex items-center space-x-4">
+            <h4 class="text-white text-lg font-bold">Exam</h4>
+            <h4 class="text-white text-lg font-bold">IQAC</h4>
+            <h4 class="text-white text-lg font-bold">Careers</h4>
+            <i class="fa-brands fa-facebook text-white text-lg hover:text-blue-600"></i>
+            <i class="fa-brands fa-instagram text-white text-lg hover:text-blue-600"></i>
+            <i class="fa-brands fa-linkedin text-white text-lg hover:text-blue-600"></i>
+            <i class="fa-brands fa-youtube text-white text-lg hover:text-blue-600"></i>
+
+            <i class="fa-brands fa-twitter text-white text-lg hover:text-blue-600"></i>
+
+
+        </div>
+    </header>
+    <nav class="bg-white shadow-md">
+        <div class=" px-3 py-3 bg-gray-400 flex justify-between items-center">
+            <div class="space-x-6 hidden md:flex">
+                <img src="Silver-oak_image.png" alt="Silver Oak University Logo" class="h-10">
+                <a href="#" class="text-[#812626] hover:text-blue-600">About</a>
+                <a href="#" class="text-[#812626] hover:text-blue-600">Admissions</a>
+                <a href="#" class="text-[#812626] hover:text-blue-600">Academics</a>
+                <a href="#" class="text-[#812626] hover:text-blue-600">Event</a>
+                <a href="/day6/sougalary_tailwind.html" class="text-[#812626] hover:text-blue-600">Gallery</a>
+                <a href="#" class="text-[#812626] hover:text-blue-600">Placements</a>
+                <a href="#" class="text-[#812626] hover:text-blue-600">Student Corner</a>
+                <a href="#" class="text-[#812626] hover:text-blue-600">Approvals</a>
+                <a href="#" class="text-[#812626] hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="slider" >   </div>
+        <div class="bg-[#6d1313]">
+            <div class="flex justify-center items-center space-x-4 p-2">
+                <button class="bg-[#e1f9dc] rounded-full p-3"> <i class="fa-regular fa-circle fa-beat"></i> 360 Virtual
+                    Campus Tour</button>
+                <button class="bg-[#e1f9dc] rounded-full p-3"> <i class="fa-regular fa-circle fa-beat"></i> Explore Your
+                    Career</button>
+            </div>
+        </div>
+        <section id="program-page-section1" class="pt-5 pb-5">
+            <div class="container mx-auto px-4">
+                <div class="flex  items-center">
+                    <div class="w-full sm:w-1/2 pb-3">
+                        <div class="relative">
+                            <iframe src="https://www.youtube.com/embed/y80iD-tF6qc" title="YouTube video player"
+                                class=" h-[500px] mt-4 w-full" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 ml-4">
+                        <h6 class="text-justify mb-4 leading-relaxed">
+                            Silver Oak University(SOU) is premier private university carrying forward the legacy of
+                            Silver Oak Group of Institutes.
+                        </h6>
+                        <h6 class="text-justify leading-relaxed">
+                            As a reflection to its motto,
+                            <span class="text-green-800 font-medium">“Gyanam Param Bhushanam”</span>
+                            meaning Knowledge is the highest virtue, SOU delivers engaging learning experience through
+                            futuristic curriculum, advanced technological interface, eminent faculty, industry academia
+                            bonding, career planning and counseling and ample career opportunities.
+                        </h6>
+                        <a href="https://silveroakuni.ac.in/about" target="_blank"
+                            class="inline-flex items-center mt-3 bg-red-800 border border-red-800 text-white px-4 py-2 rounded hover:bg-red-900 transition">
+                            <i class="fa fa-forward mr-2" aria-hidden="true"></i> Read More...
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="flex justify-center items-center space-x-4 p-4">
+            <div class=" bg-white text-black p-4 rounded-lg">
+
+                <table class="table-auto text-3xl">
+                    <thead>
+                        <tr>
+                            <th class="bg-[#136B43] border-t border-b border-l">Illuminate: 2.0</th>
+                            <th class="bg-[#136B43] border-t border-b border-r"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="">
+                        <tr class="border-1">
+                            <td>Industrial Design/ Design Patent</td>
+                            <td class="border-1">103</td>
+
+                        </tr>
+                        <tr class="border-1">
+                            <td>Product Patent</td>
+                            <td class="border-1">4</td>
+
+                        </tr>
+                        <tr class="border-1">
+                            <td>Copyright</td>
+                            <td class="border-1">5</td>
+
+                        </tr>
+                        <tr class="border-1">
+                            <td>Total IPR</td>
+                            <td class="border-1">112</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="t2 bg-white text-black p-4 rounded-lg">
+                <table class="table-auto text-3xl">
+                    <thead>
+                        <tr>
+                            <th class="bg-[#136B43] border-t border-b border-l">Illuminate: 1.0</th>
+                            <th class="bg-[#136B43] border-t border-b border-r"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="p-4">
+                        <tr class="border-1">
+                            <td>Industrial Design/ Design Patent</td>
+                            <td class="border-1">81</td>
+
+                        </tr>
+                        <tr class="border-1 ">
+                            <td class="">Product Patent</td>
+                            <td class="border-1">0</td>
+
+                        </tr>
+                        <tr class="border-1">
+                            <td>Copyright</td>
+                            <td class="border-1">0</td>
+
+                        </tr>
+                        <tr class="border-1">
+                            <td>Total IPR</td>
+                            <td class="border-1">81</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <h1 class="text-4xl font-bold text-center text-[#7a1b1b] underline mb-10">DISCIPLINES</h1>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+    <!-- Left Column -->
+    <div class="bg-pink-400 text-white font-bold text-center py-4 rounded">NURSING</div>
+    <div class="bg-gray-600 text-white font-bold text-center py-4 rounded">PHYSIOTHERAPY</div>
+    <div class="bg-cyan-500 text-white font-bold text-center py-4 rounded">PHARMACY</div>
+
+    <div class="bg-rose-900 text-white font-bold text-center py-4 rounded">PARAMEDICAL</div>
+    <div class="bg-indigo-800 text-white font-bold text-center py-4 rounded">ENGINEERING & TECHNOLOGY</div>
+    <div class="bg-teal-700 text-white font-bold text-center py-4 rounded">COMPUTER APPLICATION</div>
+
+    <div class="bg-orange-700 text-white font-bold text-center py-4 rounded">DESIGN</div>
+    <div class="bg-sky-600 text-white font-bold text-center py-4 rounded">AVIATION</div>
+    <div class="bg-green-800 text-white font-bold text-center py-4 rounded">ANIMATION & MULTIMEDIA</div>
+
+    <div class="bg-rose-700 text-white font-bold text-center py-4 rounded">MANAGEMENT</div>
+    <div class="bg-orange-500 text-white font-bold text-center py-4 rounded">COMMERCE</div>
+    <div class="bg-yellow-600 text-white font-bold text-center py-4 rounded">HUMANITIES & SOCIAL SCIENCE</div>
+
+    <div class="bg-purple-600 text-white font-bold text-center py-4 rounded">SCIENCE</div>
+    <div class="bg-purple-900 text-white font-bold text-center py-4 rounded">LAW</div>
+    <div class="bg-yellow-800 text-white font-bold text-center py-4 rounded">LIBERAL STUDIES</div>
+
+    <div class="bg-indigo-900 text-white font-bold text-center py-4 rounded">CENTRE FOR RESEARCH</div>
+    <div class="bg-blue-900 text-white font-bold text-center py-4 rounded">PHD</div>
+  </div>
+    <!-- Footer -->
+<footer class="bg-gray-100 text-sm text-gray-800">
+  <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-8">
+    <!-- Column 1 -->
+    <div>
+      <h4 class="font-bold text-lg underline underline-offset-4 text-[#7c2d2d] mb-2">SILVER OAK UNIVERSITY</h4>
+      <ul class="space-y-1">
+        <li>About SOU</li>
+        <li>Mission & Vision</li>
+        <li>MOUs</li>
+        <li>Testimonials</li>
+        <li>Careers</li>
+      </ul>
+    </div>
+
+    <!-- Column 2 -->
+    <div>
+      <h4 class="font-bold text-lg underline underline-offset-4 text-[#7c2d2d] mb-2">LEADERSHIP</h4>
+      <ul class="space-y-1">
+        <li>Management</li>
+        <li>Provost</li>
+        <li>Registrar</li>
+        <li>Governing Body</li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div>
+      <h4 class="font-bold text-lg underline underline-offset-4 text-[#7c2d2d] mb-2">PLACEMENT</h4>
+      <ul class="space-y-1 mb-4">
+        <li>Overview of Placement</li>
+        <li>Testimonials</li>
+      </ul>
+      <h4 class="font-bold text-lg underline underline-offset-4 text-[#7c2d2d] mb-2">ACHIEVEMENTS</h4>
+      <ul class="space-y-1">
+        <li>Grants</li>
+        <li>Rankings</li>
+        <li>Students Achievements</li>
+        <li>Faculty Recognition</li>
+        <li>Awards</li>
+      </ul>
+    </div>
+
+    <!-- Column 4 -->
+    <div>
+      <h4 class="font-bold text-lg underline underline-offset-4 text-[#7c2d2d] mb-2">STUDENT FACILITIES</h4>
+      <ul class="space-y-1">
+        <li>Accommodation</li>
+        <li>Laboratories</li>
+        <li>E-Library</li>
+        <li>Incubation Center</li>
+        <li>Student Clubs</li>
+        <li>IEEE Student Branch</li>
+        <li>Health Care Services</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Section -->
+  <div class="bg-white border-t border-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-700">
+      <p>All Rights Reserved. © <span class="text-[#7c2d2d] font-semibold">SILVEROAK CAMPUS AND RESEARCH FOUNDATION</span></p>
+      <div class="flex space-x-4 mt-2 md:mt-0 text-xl">
+        <!-- Social Media Icons (Replace # with actual links and add icons if needed) -->
+        <a href="#" class="text-blue-800 hover:opacity-75"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-black hover:opacity-75"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="text-pink-600 hover:opacity-75"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-blue-600 hover:opacity-75"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="text-red-600 hover:opacity-75"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
